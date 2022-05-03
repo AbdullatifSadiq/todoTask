@@ -1,0 +1,58 @@
+.todo {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  display: inline-block;
+}
+
+.edit__input,
+.main__todo {
+  margin-left: 10px;
+  width: 100%;
+  padding: 5px;
+}
+.edit__input {
+  margin-left: 10px;
+  width: 100%;
+}
+
+.edit__input input {
+  border: none;
+  outline: none;
+}
+
+.delete__btn {
+  margin-left: auto;
+  display: none;
+}
+/* 
+.todo:hover show {
+  display: inline-block;
+} */
+
+.todo__text {
+  padding: 0.5rem;
+}
+
+.complete__btn {
+  padding: 0;
+  margin: 0;
+  color: #80f580;
+  padding-inline: 0.5rem;
+}
+.todo__text {
+  position: absolute;
+  left: 14%;
+  top: -20%;
+}
