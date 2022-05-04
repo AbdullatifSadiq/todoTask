@@ -1,0 +1,86 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 550px;
+  margin: auto;
+}
+
+.header {
+  font-size: 100px;
+  margin: 0;
+  padding: 0;
+  color: rgba(175, 47, 47, 0.14901960784313725);
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+}
+
+.input__container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.main__input {
+  width: 100%;
+  padding: 16px 16px 16px 60px;
+  border: none;
+  outline: none;
+  line-height: 1.4em;
+  font-size: 24px;
+}
+
+.main__input::placeholder {
+  font-style: italic;
+}
+
+.todo__items {
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 13px;
+  background-color: #fff;
+  font-weight: 500;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex: 0.5;
+}
+
+.tab,
+.clear__completed {
+  cursor: pointer;
+}
+
+.task__count {
+  margin-left: 10px;
+}
+
+.clear__completed {
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 400px) {
+  .app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+  }
+}

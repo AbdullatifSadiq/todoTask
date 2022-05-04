@@ -1,58 +1,66 @@
-.todo {
+.todoitem {
   display: flex;
   align-items: center;
-  position: relative;
+  justify-contents: space-between;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  padding: 0 14px 0 14px;
 }
 
-.completed {
+.delete {
+  width: 14px;
+  height: 14px;
+  font-color: red;
+  margin-left: auto;
+  opacity: 0;
+}
+
+.todo__check {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid black;
+  margin-right: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.todo__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.check {
+  width: 25px;
+  height: 25px;
+  color: #80f580;
+}
+
+.complete {
   text-decoration: line-through;
 }
 
-.circle {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  border: 1px solid #000;
-  display: inline-block;
+.todoitem:hover .delete {
+  opacity: 2;
+  transition: all 1s ease-in-out;
 }
 
-.edit__input,
-.main__todo {
-  margin-left: 10px;
-  width: 100%;
-  padding: 5px;
-}
 .edit__input {
-  margin-left: 10px;
+  border: 1px solid black;
+  outline: 1px solid black;
   width: 100%;
+  padding: 16px 16px 16px 0px;
+  line-height: 1.4em;
+  font-size: 24px;
 }
 
-.edit__input input {
-  border: none;
-  outline: none;
+.todo__text__container {
+  flex: 1;
 }
 
-.delete__btn {
-  margin-left: auto;
-  display: none;
-}
-/* 
-.todo:hover show {
-  display: inline-block;
-} */
-
-.todo__text {
-  padding: 0.5rem;
-}
-
-.complete__btn {
-  padding: 0;
-  margin: 0;
-  color: #80f580;
-  padding-inline: 0.5rem;
-}
-.todo__text {
-  position: absolute;
-  left: 14%;
-  top: -20%;
+.hide {
+  opacity: 0;
 }
